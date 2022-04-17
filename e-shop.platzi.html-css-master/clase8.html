@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Quicksand:wght@300;500;700&family=Roboto:wght@100&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --hospital-green: #acd9b2;
+            --white: #FFFFFF;
+            --dark: #232830;
+            --text-input-field: #f7f7f7;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            
+        }
+
+        .mobile-menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 24px;
+        }
+
+        
+
+        .mobile-menu ul:nth-child(3){
+            margin-bottom: 50px;
+        }
+        
+        .mobile-menu a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            margin-bottom: 24px; 
+        }
+
+        .mobile-menu ul {
+            margin: 24px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .mobile-menu ul:nth-child(1) {
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 24px;
+        }
+        .email {
+            font-size: var(--sm);
+            font-weight: 300 !important;
+        }
+        .sign-out {
+            font-size: var(--sm);
+            color: var(--hospital-green) !important
+        }
+        
+
+    </style>
+    <div class="mobile-menu">
+        <ul>
+            <li>
+                <a href="/">CATEGORIAS</a>
+            </li>
+            <li>
+                <a href="/">All</a>
+            </li>
+            <li>
+                <a href="/">Clothes</a>
+            </li>
+            <li>
+                <a href="/">Electronics</a>
+            </li>
+            <li>
+                <a href="/">Toys</a>
+            </li>
+            <li>
+                <a href="/">Other</a>
+            </li>
+        </ul>
+        
+        
+        <ul>
+            <li>
+                <a href="/">My orders</a>
+            </li>
+            <li>
+                <a href="/">My account</a>
+            </li>
+        </ul>
+
+
+        <ul>
+            <li>
+                <a href="/" class="email">romen.tergazarian@gmail.com</a>
+            </li>
+            <li>
+                <a href="/" class="sign-out">Sign out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

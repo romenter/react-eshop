@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --hospital-green: #acd9b2;
+            --white: #FFFFFF;
+            --dark: #232830;
+            --text-input-field: #f7f7f7;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            
+        }
+
+        .menu {
+            display: none;
+        }
+        .logo{
+            width: 120px;
+            
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+
+        .navbar-left ul,
+        .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+
+        .navbar-left {
+            display: flex;
+        }
+
+        .navbar-left ul{
+            margin-left: 12px;
+        }
+        .navbar-left ul li a,
+        .navbar-right ul li a {
+        text-decoration: none;
+        color: var(--very-light-pink);
+        border: 1px solid var(--white);
+        padding: 8px;
+        border-radius: 8px;
+        }
+
+        .navbar-left ul li a:hover,
+        .navbar-right ul li a:hover {
+        border: 1px solid var(--hospital-green);
+        color: var(--hospital-green)
+
+        }
+
+        .menu-app-bar, .menu-shopping{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .menu-shopping{
+            margin-left: 8px;
+        }
+        .menu-app-bar {
+            padding-top: 12px;
+        }
+
+        .navbar-email{
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin-right: 12px;
+        }
+
+        .navbar-shopping-cart{
+            position: relative;
+        }
+        .navbar-shopping-cart div{
+            width: 8px;
+            height: 8px;
+            background-color: var(--hospital-green);
+            border-radius: 50%;
+            font-size: var(--sm);
+            font-weight: bold;
+            position: absolute;
+            top: -2px;
+            right: 16px;
+
+        }
+
+        @media (max-width: 640px){
+            .menu{
+                display: block;
+            }
+            .navbar-left ul {
+                display: none;
+            }
+            .navbar-email{
+                display: none;
+            }
+        }
+        
+
+    </style>
+    <nav>
+        <img class="menu-app-bar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAADPz8+WlpZLS0v7+/vu7u5vb29TU1PDw8Pz8/N8fHyCgoITExMzMzOsrKyPj4+6urrU1NTo6Oizs7NCQkJkZGQoKCilpaUtLS05OTmenp7IyMiFhYVaWlpqamoLCwt+baPtAAACfUlEQVR4nO3di27CMAyF4TBWoAxYx2UX2Abv/5RbpSE2aXLSJpJl5/+ewEdQSlLXCQEAAAAAAAAAAAAAAAAA/Fu2H5/3dnyu2uWgfLv5xJ75Ljlf02kXO1LXpAWcHbQrHe0wSwm4XGvXmWGdcDU2G+0qs2ziX9SVdo2ZVrGAW+0Ks20jCZ+1C8z2LAecaddXgPx7+qhdXgGPYsKzdnkFnMWEL9rlFfAiJrxol1eCmFC7uCLEhJb/sV2txYT32uUVcBATWl03/daJCd+1yyvgXUzo4Mf0IgcMr9oFZnuNJGzetCvM9BZdIFq/EiNXof3v6SkeMISpdpUZpikBQ3jSrnO0p7SA3+tgixvCk8k8aS/xx2561K53oGOXvuV9Dbm9s2M7OB4AAAAAAAAAALBj2Z6mdpwGvm4Rmv1C+1nSYIt94rsIvdZmN/umTQ34oF3qaA9pAe19QW8WKQFtPuG+mscDWu/0lru8g4dm/Vi7gvVXZqIvzTTa9RUg3xbtNgvdyG1Ddm+FN/JN0Vqf0H82YkL7LcKxJmHt6oqo/DO0uaj46ygm9P9b6v9+6P8/jf//pRWsLfyvDytY41ewT2P5ppi411bBfmkFe949588tAAAAAAAAAACAJc7nRO06aw/Yhs36mtkcen1Onte21y51tMSZe+7nJp60q8ySMPvS/fzSxvrc+egMWtvzWXuxOcLa9RXg+yrsyVei/5nsdg+zupHn6vs/G0G7uiIqT2j9ft+Tz5mxuWz6Sz4ryHqXd0/u9Lbfqh9t1nd/7loFZ+eZf2kmev5hBWdY+j+HtIKzZCs4Dzj4P9O5Z+1c7g9euAAAAAAAAAAAAAAAAABQhS+ZyFZoP93BCgAAAABJRU5ErkJggg==" alt="menu"> 
+
+        <div class="navbar-left">
+
+            <img class="logo" src="./logos/logo_yard_sale.svg" alt="logo">
+
+            <ul>
+                <li>
+                    <a href="/">All</a>
+                </li>
+                <li>
+                    <a href="/">Clothes</a>
+                </li>
+                <li>
+                    <a href="/">Electronics</a>
+                </li>
+                <li>
+                    <a href="/">Furnitures</a>
+                </li>
+                <li>
+                    <a href="/">Toys</a>
+                </li>
+                <li>
+                    <a href="/">Others</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+                <li class="navbar-email">romen.tergazarian@gmail.com</li>
+                <li class="navbar-shopping-cart">
+                    <img class="menu-shopping" src="data:image/png;base64,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" alt="shopping cart">
+                    <div>2</div>
+                </li>
+            </ul>
+            
+        </div>
+    
+    </nav>
+</body>
+</html>
